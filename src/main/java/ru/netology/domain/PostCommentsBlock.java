@@ -1,39 +1,61 @@
 package ru.netology.domain;
 
 public class PostCommentsBlock {
+
+//    ПОЛЯ НА ОСНОВЕ ДОКУМЕНТАЦИИ:
+
+//    количество комментариев
+    private int countComments;
+//    может ли текущий пользователь комментировать запись
+    private boolean canCommentPost;
+//    могут ли сообщества комментировать запись
+    private boolean groupsCanCommentPost;
+//    может ли текущий пользователь закрыть комментарии к записи
+    private boolean canCloseComments;
+//    может ли текущий пользователь открыть комментарии к записи
+    private boolean canOpenComments;
+
+//    ПОЛЯ, КОТОРЫЕ Я БЫ ДОБАВИЛА:
+
+//    Кнопка "Комментировать"
     private boolean buttonComment;
     private String buttonCommentImageUrl;
-    private int countComment;
+//    Кнопка "Отправить комментарий"
     private boolean buttonSendComment;
     private String imageButtonSendCommentUrl;
+//    Текст комментария
     private String textComment;
+//    Кнопка "Показывать в начале интересные"
     private boolean buttonInterestingFirst;
     private String textButtonInterestingFirst;
+//    Кнопка "Показать следующие"
     private boolean buttonShowNext;
     private String textButtonShowNext;
+//    Дата комментария
     private String dataComment;
-
-//    Author of comment
+//    Автор комментария
     private String authorId;
     private String authorUrl;
     private String authorImageUrl;
 
-//    Reaction Like on comments
+//    Реакция Like на комментарии
     private boolean likeComment;
     private String likeImageUrl;
     private int countLike;
     private String textLikers;
-    private boolean buttonShareComment;
-    private String buttonShareCommentImageUrl;
     private String authorLikeId;
     private String authorLikeUrl;
     private String authorLikeImageUrl;
 
-//    Reaction Complain on comments
+//    Кнопка "Поделиться комментарием"
+    private boolean buttonShareComment;
+    private String buttonShareCommentImageUrl;
+
+//    Реакция "Пожаловаться" на комментарий
     private boolean complain;
     private String complainImageUrl;
 
-//    Reaction Answer on comments
+//    Ответить на комментарий
     private boolean buttonAnswer;
     private String buttonAnswerUrl;
     private String textAnswer;
@@ -41,7 +63,7 @@ public class PostCommentsBlock {
     private String authorAnswerUrl;
     private String authorAnswerImageUrl;
 
-//    Attachments to comments and to answers to it
+//    Вложения к комментариям и ответам на них
     private boolean attach;
     private String attachImageUrl;
     private boolean attachPhoto;

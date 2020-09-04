@@ -10,6 +10,7 @@ public class PostImageBlock {
     private String textImage;
     private String textImageUrl;
 
+//    Кнопка "Сохранить пост в закладках"
     private boolean buttonSaveToBookmarks;
     private String buttonSaveToBookmarksImageUrl;
     private String textButtonSaveToBookmarks;
